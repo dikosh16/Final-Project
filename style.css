@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(https://phonoteka.top/uploads/posts/2021-05/1620154716_19-phonoteka_org-p-zadnii-fon-zvezdnie-voini-22.jpg);
+}
+
+.container {
+  background-color: #e19c1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 44px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #259425;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #359235;
+}
+
+.loading {
+  text-align: center;
+  margin: 20px;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.character-card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4b4b4b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.character-card:hover {
+  background-color: #555151;
+}
+
+.character-info {
+  position: fixed;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+  width: 300px;
+  max-width: calc(100% - 40px);
+  background-color: rgb(75, 75, 75, 0.5);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
+}
+
+.character-info-card {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.character-info.active {
+  display: block;
+}
